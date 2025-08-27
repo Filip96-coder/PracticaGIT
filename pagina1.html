@@ -12,6 +12,7 @@
     <nav>
       <a href="#uni">Universidad</a>
       <a href="#carrera">Ingeniería</a>
+      <a href="#inscripcion">Inscripción</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
@@ -28,6 +29,45 @@
       en el desarrollo de software, gestión de sistemas de información y tecnologías emergentes.
     </p>
     <button onclick="mostrarMensaje()">Más información</button>
+  </section>
+
+  <!-- NUEVA SECCIÓN DE INSCRIPCIÓN -->
+  <section id="inscripcion">
+    <h2>Formulario de Interés en Inscribirse</h2>
+
+    <form onsubmit="enviarFormulario(event)">
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="correo">Correo electrónico:</label><br>
+      <input type="email" id="correo" name="correo" required><br><br>
+
+      <label for="programa">Programa de interés:</label><br>
+      <select id="programa" name="programa">
+        <option>Ingeniería Informática</option>
+        <option>Ciencia de Datos</option>
+        <option>Ingeniería de Software</option>
+        <option>Sistemas Inteligentes</option>
+      </select><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h3>Beneficios de estudiar en el Poli</h3>
+    <ul>
+      <li>Excelencia académica reconocida en Colombia.</li>
+      <li>Oportunidades de investigación e innovación.</li>
+      <li>Convenios internacionales y movilidad estudiantil.</li>
+      <li>Programas orientados a las necesidades del mercado laboral.</li>
+    </ul>
+
+    <h3>Otras carreras afines</h3>
+    <p>Además de Ingeniería Informática, el Poli ofrece programas en:</p>
+    <ul>
+      <li>Ciencia de Datos</li>
+      <li>Ingeniería de Software</li>
+      <li>Sistemas Inteligentes</li>
+    </ul>
   </section>
 
   <section id="contacto">
