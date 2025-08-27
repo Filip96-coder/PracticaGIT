@@ -11,6 +11,12 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+
+  /* Logo como fondo */
+  background-image: url("logo-poli.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 80px;
 }
 
 header img {
