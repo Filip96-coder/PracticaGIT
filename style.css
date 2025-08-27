@@ -54,12 +54,6 @@ h2 {
 #carrera {
   padding: 40px;
   text-align: center;
-
-  /* Imagen de estudiante (opcional, solo si tienes el archivo) */
-  /* background-image: url("estudiante.png"); */
-  background-repeat: no-repeat;
-  background-position: left 40px center;
-  background-size: 200px;
 }
 
 #carrera p {
@@ -81,6 +75,125 @@ button {
 
 button:hover {
   background-color: #e6c200;
+}
+
+/* ====== FORMULARIO ====== */
+form {
+  background-color: #f0f8f0;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ====== PERSONAJE ANIMADO ====== */
+#animacion {
+  text-align: center;
+  padding: 50px;
+}
+
+.personaje {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* Cabeza */
+.cabeza {
+  width: 60px;
+  height: 60px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: moverCabeza 1s infinite alternate;
+}
+
+/* Cuerpo */
+.cuerpo {
+  width: 10px;
+  height: 80px;
+  background-color: #006400;
+  margin: 0 auto;
+}
+
+/* Brazos */
+.brazo {
+  position: absolute;
+  width: 60px;
+  height: 8px;
+  background-color: #006400;
+  top: 70px;
+  transform-origin: left center;
+}
+
+.brazo.izquierdo {
+  left: -50px;
+  animation: moverBrazoIzq 1s infinite alternate;
+}
+
+.brazo.derecho {
+  right: -50px;
+  animation: moverBrazoDer 1s infinite alternate;
+}
+
+/* Piernas */
+.pierna {
+  position: absolute;
+  width: 12px;
+  height: 70px;
+  background-color: #333;
+  bottom: 0;
+}
+
+.pierna.izquierda {
+  left: 30px;
+  animation: moverPiernaIzq 1s infinite alternate;
+}
+
+.pierna.derecha {
+  right: 30px;
+  animation: moverPiernaDer 1s infinite alternate;
+}
+
+/* ====== ANIMACIONES ====== */
+@keyframes moverCabeza {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(10deg); }
+}
+
+@keyframes moverBrazoIzq {
+  0% { transform: rotate(20deg); }
+  100% { transform: rotate(-30deg); }
+}
+
+@keyframes moverBrazoDer {
+  0% { transform: rotate(-20deg); }
+  100% { transform: rotate(30deg); }
+}
+
+@keyframes moverPiernaIzq {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-20deg); }
+}
+
+@keyframes moverPiernaDer {
+  0% { transform: rotate(-10deg); }
+  100% { transform: rotate(20deg); }
 }
 
 /* ====== FOOTER ====== */
