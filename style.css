@@ -12,17 +12,11 @@ header {
   padding: 20px;
   text-align: center;
 
-  /* Logo como fondo */
+  /* Logo del Poli */
   background-image: url("logo-poli.png");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 80px;
-}
-
-header img {
-  max-height: 80px;
-  display: block;
-  margin: 0 auto 10px;
 }
 
 nav {
@@ -51,6 +45,21 @@ section:nth-child(even) {
 
 h2 {
   color: #006400;
+}
+
+/* Personaje estudiando en sección de carrera */
+#carrera {
+  padding: 40px;
+  text-align: center;
+  background-image: url("estudiante.png");
+  background-repeat: no-repeat;
+  background-position: left 40px center;
+  background-size: 200px;
+}
+
+#carrera p {
+  max-width: 600px;
+  margin: auto;
 }
 
 button {
